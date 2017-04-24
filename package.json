@@ -1,0 +1,22 @@
+{
+  "name": "tdd-katas",
+  "version": "1.0.0",
+  "description": "excercises for pracitsing tdd ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goformarty/TDD-katas.git"
+  },
+  "keywords": [
+    "tdd"
+  ],
+  "author": "Marty Stepien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goformarty/TDD-katas/issues"
+  },
+  "homepage": "https://github.com/goformarty/TDD-katas#readme"
+}
