@@ -7,9 +7,10 @@ describe("RomanNumerals", function() {
     expect(romanNumerals.convert(4)).toEqual("IV");
     expect(romanNumerals.convert(5)).toEqual("V");
     expect(romanNumerals.convert(6)).toEqual("VI");
+    expect(romanNumerals.convert(9)).toEqual("IX");
     expect(romanNumerals.convert(10)).toEqual("X");
     expect(romanNumerals.convert(20)).toEqual("XX");
-
-
+    expect(romanNumerals.convert(100)).toEqual("C");
+    expect(romanNumerals.convert(1449)).toEqual("MCDXLIX");
   });
 });

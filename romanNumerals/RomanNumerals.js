@@ -2,40 +2,14 @@ function RomanNumerals() {}
 
 RomanNumerals.prototype.convert = function(n) {
 	var roman = "";
-	var equivalents = [
-		["M", 1000],
-		["CM", 900],
-		["D", 500],
-		["CD", 400],
-		["C", 100],
-		["XC", 90],
-		["L", 50],
-		["XL", 40],
-		["X", 10],
-		["IX", 9],
-		["V",5],
-		["I",1]
-	];
+	 var decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
+     var symbols = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'];
 
-	while (n>=10) {
-		roman += "X";
-		n-=10;
-	}
-	while (n>=9) {
-		roman = "IX";
-		n -= 9;
-	}
-	while (n>=5) {
-		roman = "V";
-		n -= 5;
-	}
-	while (n>=4) {
-		roman += "IV";
-		n -= 4;
-	}
-	while (n>=1) {
-		roman += "I";
-		n -= 1;
-	}
+      for (var i = 0; i< symbols.length; i++) {
+      	while (n>= decimals[i]) {
+      		roman += symbols[i];
+      		n -= decimals[i];
+      	}
+      }
 	return roman;
 };
