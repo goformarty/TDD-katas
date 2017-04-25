@@ -8,5 +8,6 @@ describe("PrimeFactors", function() {
     expect(primeFactors.calculate(5)).toEqual([5]);
     expect(primeFactors.calculate(6)).toEqual([2,3]);
     expect(primeFactors.calculate(9)).toEqual([3,3]);
+    expect(primeFactors.calculate(2*3*7*11*23*29)).toEqual([2,3,7,11,23,29]);
   });
 });
